@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'LolBold';
+    src: url('fonts/FrizBold.otf');
+}
+
+@font-face {
+    font-family: 'LolMedium';
+    src: url('fonts/FrizMedium.otf');
+}
+
+@font-face {
+    font-family: 'LolRegular';
+    src: url('fonts/FrizRegular.ttf');
+}
+@font-face {
+    font-family: 'LolItalic';
+    src: url('fonts/FrizItalic.ttf');
+}
+/* importing local Lol fonts  */
+
+
+body, html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "LolRegular", serif;
+    color: #fafafa;
+}
+
+header {
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 48px;
+}
+
+/* video in the background */
+.video-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+}
+
+
+.background-video {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    scale: 1.09;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: blur(4px);
+    opacity: 0.3;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -64px
+}
+
+main h1 {
+    font-family: "LolMedium";
+    font-size: 82px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    user-select: none;
+}
+
+.divider{
+    width: 750px;
+}
+main button {
+    font-family: "LolBold";
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 24px 48px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(205, 250, 250);
+    border: 5px solid rgb(24, 141, 141);
+    margin: 48px 0;
+    cursor: pointer;
+}
+
+button::after {
+    content: "";
+    background: url(assets/btn-pattern.png);
+}
+
+main a {
+    color: rgb(196, 185, 152);
+    font-size: 12px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+    margin: 16px;
+}
+
+
+#downloadRegion{
+    font-family: "LolRegular";
+    font-size: 14px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(196, 185, 152);
+    text-transform: uppercase;
+    border: 3px solid rgb(147, 115, 65);
+    border-radius: 0px;
+    padding: 8px 120px 8px 16px;
+    cursor: pointer;
+}
+
+#downloadRegion:hover {
+    border: 3px solid rgb(227, 180, 103);
+}
+
+
+#legalOption {
+    font-family: "LolRegular";
+    font-size: 12px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(196, 185, 152);
+    text-transform: uppercase;
+    border: 2px solid rgb(147, 115, 65);
+    border-radius: 0px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+
+.footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 20px 0 20px;
+}
+
+.logos-container {
+    display: flex;
+    justify-content: center;
+}
+
+.logos-container img {
+    margin: 12px;
+}
+
+footer {
+    color: rgb(147, 115, 65);
+}
+
+footer p {
+    font-size: 14px;
+    font-family: "LolRegular";
+    line-height: 200%;
+    letter-spacing: 1px;
+    text-align: center;
+    user-select: none;
+}
+
+footer a {
+    color: rgb(147, 115, 65);
+}
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 1161px) {
+    
+}
